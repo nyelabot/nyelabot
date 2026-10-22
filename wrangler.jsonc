@@ -1,14 +1,35 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "samir24jam",
-  "main": "worker.js",
-  "compatibility_date": "2026-10-22",
-  "assets": {
-    "directory": "./public",
-    "binding": "ASSETS",
-    "run_worker_first": true
-  },
-  "vars": {
-    "GA_MEASUREMENT_ID": "G-BMT25LMDJV"
-  }
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	// Top-level configuration
+	"name": "my-worker",
+	"main": "src/index.js",
+	"upload_source_maps": true,
+	// Set this to today's date
+	"compatibility_date": "2026-10-22",
+	"workers_dev": false,
+	"route": {
+		"pattern": "example.org/*",
+		"zone_name": "example.org",
+	},
+	"kv_namespaces": [
+		{
+			"binding": "<MY_NAMESPACE>",
+			"id": "<KV_ID>",
+		},
+	],
+	"env": {
+		"staging": {
+			"name": "my-worker-staging",
+			"route": {
+				"pattern": "staging.example.org/*",
+				"zone_name": "example.org",
+			},
+			"kv_namespaces": [
+				{
+					"binding": "<MY_NAMESPACE>",
+					"id": "<STAGING_KV_ID>",
+				},
+			],
+		},
+	},
 }
