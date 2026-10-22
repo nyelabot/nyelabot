@@ -11,9 +11,6 @@ export default {
         response.status !== 200) {
       return response;
     }
-    conts isGooglebot =
-      /Googlebot/
-    i.test(userAgent);
 
     const tag = `
 <script async src="https://www.googletagmanager.com/gtag/js?id=${id}"></script>
