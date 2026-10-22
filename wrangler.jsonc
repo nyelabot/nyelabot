@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "samir24jam",
+  "name": "nyelabot",
   "main": "worker.js",
   "compatibility_date": "2026-10-22",
   "assets": {
