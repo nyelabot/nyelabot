@@ -1,14 +1,13 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "samir24jam",
   "main": "worker.js",
-  "compatibility_date": "2026-19-08",
-  "assets": {
-    "directory": "./public",
-    "binding": "ASSETS",
-    "run_worker_first": true
-  },
+  "compatibility_date": "2026-19-19",
   "vars": {
     "GA_MEASUREMENT_ID": "G-BMT25LMDJV"
+  },
+  "assets": {
+    "directory": "./",
+    "binding": "ASSETS",
+    "run_worker_first": true
   }
 }
