@@ -1,7 +1,7 @@
 {
   "name": "samir24jam",
   "main": "worker.js",
-  "compatibility_date": "2026-19-19",
+  "compatibility_date": "2026-10-22",
   "vars": {
     "GA_MEASUREMENT_ID": "G-BMT25LMDJV"
   },
