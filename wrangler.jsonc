@@ -2,7 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "samir24jam",
   "main": "worker.js",
-  "compatibility_date": "2026-10-22",
+  "compatibility_date": "2026-19-08",
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",
